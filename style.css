@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music {
+    padding: 20px;
+    display: inline-flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+}
+
+.music .bar {
+    width: 10px;
+    border-radius: 10px;
+    transition: .5s all ease-in-out;
+    background-color: white;
+    animation: movement 1.2s ease-in-out infinite;
+}
+
+
+
+
+/*responsive*/
+@media screen and (max-width:500px){
+    .music .bar{
+        width: 5px;
+    }
+}
+
+/*animation*/
+
+@keyframes movement {
+    0%, 100% {
+        height: 1px;
+    }
+    50% {
+        height: 150px;
+    }
+}
+
+/*each bar*/
+
+.music .bar:nth-child(1) {
+    animation-delay: 1s;
+    background-color: #e50b31;
+}
+
+.music .bar:nth-child(2) {
+    animation-delay: .8s;
+    background-color: #d74f67;
+}
+
+.music .bar:nth-child(3) {
+    animation-delay: .4s;
+    background-color: #e04217;
+}
+
+.music .bar:nth-child(4) {
+    animation-delay: .6s;
+    background-color: #8634bb;
+}
+
+.music .bar:nth-child(5) {
+    animation-delay: .2s;
+    background-color: #418fff;
+}
+
+.music .bar:nth-child(6) {
+    animation-delay: .8s;
+    background-color: #41c052;
+}
+
+.music .bar:nth-child(7) {
+    animation-delay: .4s;
+    background-color: pink;
+}
+
+.music .bar:nth-child(7) {
+    animation-delay: .2s;
+    background-color: #a42aa2;
+}
+
+.music .bar:nth-child(8) {
+    animation-delay: 1s;
+    background-color: #ffb600;
+}
+
+.music .bar:nth-child(9) {
+    animation-delay: .6s;
+    background-color: pink;
+}
